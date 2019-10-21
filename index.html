@@ -22,6 +22,7 @@
         <script src="/js/libraries/leaflet/leaflet-openweathermap.js"></script>
         <script src="/js/libraries/leaflet/leaflet-languageselector.js"></script>
 
+        <link rel="stylesheet" href="https://use.typekit.net/jjt4ypw.css">
         <link rel="stylesheet" href="/style.css">
     </head>
 
@@ -32,9 +33,55 @@
         <input placeholder="Enter Your ZIP Code" name="name" id="zip" />
         <p id="zip_display"></p>
 
-
         <div class="results" id="app">
-            <h1>TIME</h1>
+            <div class="search">
+                Search
+            </div>
+            <div class="hero">
+                <div class="info">
+                    <div class="icon"></div>
+                    <div class="date">
+                        <div class="day">
+                            Monday
+                        </div>
+                        <div class="date_2">
+                            14th October 2019
+                        </div>
+                    </div>
+                    <div class="alert">
+                        Emergeency Alert
+                    </div>
+
+
+                </div>
+                <div class="temp">
+                    <div class="current">
+                        40
+                    </div>
+                    <div class="highlow">
+                        <div class="empty"></div>
+                        <div class="empty_2"></div>
+                        <div class="high">
+                            50
+                        </div>
+                        <div class="low">
+                            20
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section_1">
+                <div class="location">
+                    <div class="place">
+                        Manhattan
+                    </div>
+                    <div class="zip">
+                        66506
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- <h1>TIME</h1>
             <p>{{time.day}}</p>
             <p>{{time.date}}</p>
             <p>{{time.hour_12}} : {{time.minute}} : {{time.seconds}} {{time.ampm}}</p>

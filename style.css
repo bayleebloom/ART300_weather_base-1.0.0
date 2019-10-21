@@ -1,3 +1,10 @@
+body{
+font-family: forma-djr-display, sans-serif;
+font-weight: 400;
+font-style: normal;
+color: white;
+background-color: rgb(104, 103, 226);
+}
 .degree_symbol:not(:empty)::after {
     content: "°"
 }
@@ -9,4 +16,51 @@
 #map {
 	width: 600px;
     height: 600px;
+}
+.search{
+    background-color: rgb(104, 103, 226);
+    margin: 0px 20px 0px 20px;
+    width: 97%;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    outline: rgb(55, 18, 162);
+    outline-width: 5px;
+    outline-style: solid;
+}
+.hero{
+    width: 100%;
+    background-color: purple;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 20px;
+    grid-template-rows: 1fr;
+}
+.date{
+    width: 100%;
+    background-color: red;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 20px;
+    grid-template-rows: 1fr;
+}
+.alert{
+    width: 100%;
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 20px;
+    grid-template-rows: 1fr;
+}
+.highlow{
+    width: 100%;
+    background-color: pink;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-size: 20px;
+    grid-template-rows: 1fr;
+}
+.section_1{
+    background-color: green;
+    margin-top: 0px;
 }
