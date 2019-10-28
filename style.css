@@ -5,6 +5,11 @@ font-style: normal;
 color: white;
 background-color: rgb(104, 103, 226);
 }
+p{
+    margin-top: 0px;
+    width: 100%;
+    margin-bottom: 0px;
+}
 .degree_symbol:not(:empty)::after {
     content: "°"
 }
@@ -21,13 +26,16 @@ background-color: rgb(104, 103, 226);
     background-color: rgb(104, 103, 226);
     margin: 0px 20px 0px 20px;
     width: 97%;
-    height: 50px;
+    height: 60px;
     font-size: 30px;
     text-align: center;
     outline: rgb(55, 18, 162);
     outline-width: 5px;
     outline-style: solid;
-    padding-top: 20px;
+    padding-top: 0px;
+    margin-top: 20px;
+    color: white;
+    margin-bottom: 10px;
 }
 .hero{
     width: 98%;
@@ -39,6 +47,9 @@ background-color: rgb(104, 103, 226);
     grid-template-rows: 1fr;
     margin: 0px 20px 0px 20px;
     border-bottom: 5px solid rgb(55, 18, 162);
+}
+.current{
+    padding-left: 50px;
 }
 .icon{
     width: 100%;
@@ -55,7 +66,7 @@ background-color: rgb(104, 103, 226);
     margin: 0px auto 0px auto;
 }
 .date{
-    width: 100%;
+    width: 110%;
     height: 50px;
     background-color: rgb(104, 103, 226);
     display: grid;
@@ -64,6 +75,10 @@ background-color: rgb(104, 103, 226);
     grid-template-rows: 1fr;
     margin-top: 0px;
     border-bottom: 5px solid rgb(55, 18, 162);
+}
+.date_2{
+    text-align: right;
+    padding-right: 50px;
 }
 .alert{
     width: 85%;
@@ -120,7 +135,18 @@ background-color: rgb(104, 103, 226);
     grid-template-columns: 1fr 1fr 1fr;
     font-size: 25px;
     grid-template-rows: 1fr;
-    margin-top: 0px;
+}
+.empty_2{
+    height: 0px;
+    width: 0px;
+}
+.lat{
+    width: 110%;
+}
+.long{
+    width: 100%;
+    text-align: right;
+    padding-right: 100px;
 }
 .high{
     font-weight: 700;
@@ -130,8 +156,8 @@ background-color: rgb(104, 103, 226);
 }
 .zip{
     font-size: 30px;
-    padding-top: 20px;
-    padding-left: 70px;
+    padding-left: 140px;
+    padding-top: 30px;
 }
 .number{
     padding-left: 40px;
@@ -197,7 +223,7 @@ background-color: rgb(104, 103, 226);
 }
 .description{
     width: 95%;
-    height: 100px;
+    height: 80px;
     background-color: rgb(104, 103, 226);
     display: grid;
     grid-template-columns: 1fr;
@@ -214,7 +240,7 @@ background-color: rgb(104, 103, 226);
     grid-template-columns: 1fr 1fr 1fr;
     font-size: 40px;
     grid-template-rows: 1fr;
-    margin-top: 70px;
+    margin-top: 45px;
     padding-left: 30px;
     padding-top: 15px;
     border-bottom: 5px solid rgb(55, 18, 162);
@@ -308,6 +334,7 @@ background-color: rgb(104, 103, 226);
     padding-left: 30px;
     padding-top: 15px;
     border-bottom: 5px solid rgb(55, 18, 162);
+    z-index: 90;
 }
 .visibility{
     width: 93%;
@@ -319,6 +346,7 @@ background-color: rgb(104, 103, 226);
     grid-template-rows: 1fr;
     padding-left: 30px;
     padding-top: 15px;
+    z-index: 90;
 }
 .pressure{
     width: 97%;
@@ -333,6 +361,7 @@ background-color: rgb(104, 103, 226);
     margin-left: -40px;
     border-top: 10px solid rgb(0, 175, 246);
     border-bottom: 10px solid rgb(0, 175, 246);
+    z-index: 90;
 }
 .amount{
     text-align: right;
@@ -354,7 +383,6 @@ background-color: rgb(104, 103, 226);
     padding-top: 20px;
     border-bottom: 5px solid rgb(51, 63, 224);
     border-top: 5px solid rgb(55, 18, 162);
-    margin: 0px;
 }
 .large{
     font-weight: 700;
@@ -471,12 +499,10 @@ background-color: rgb(104, 103, 226);
     grid-template-columns: 1fr 1fr;
     font-size: 70px;
     grid-template-rows: 1fr;
-    padding-left: 20px;
-    padding-top: 50px;
-    padding-bottom: 30px;
+    padding-left: 10px;
 }
 .tv{
-    width: 1600px;
+    width: 1500px;
     height: 1000px;
     margin-left: -80px;
     margin-top: -50px;
@@ -484,39 +510,39 @@ background-color: rgb(104, 103, 226);
 .sunset{
     width: 700px;
     height: 700px;
-    margin-left: -70px;
-    margin-top: -120px;
+    margin-left: -250px;
+    margin-top: -250px;
+    background-color: yellow;
+    margin-bottom: 90px;
+    z-index: 5;
 }
 .rise{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    font-size: 50px;
-    margin-top: -230px;
-    margin-left: -20px;
-    background-color: rgb(104, 103, 226);
-}
-.set{
-    padding-left: 80px;
+    background-color: red;
+    z-index: 90;
 }
 .moon{
     height: 400px;
-    width: 125%;
+    width: 140%;
     border-top: 5px solid rgb(55, 18, 162);
-    background-color: rgb(104, 103, 226);
-    margin: -250px auto auto -240px;
+    background-color: green;
+    margin: -200px auto auto -240px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    z-index: 100;
 }
 .moon_image{
     width: 450px;
     height: 450px;
-    margin-left: 0px;
+    margin-left: -20px;
     margin-top: -10px;
 }
 .phase{
     padding-top: 70px;
-    font-size: 60px;
+    margin-left: -60px;
+    font-size: 50px;
 }
 .illumination{
-    font-size: 40px;
+    font-size: 30px;
 }

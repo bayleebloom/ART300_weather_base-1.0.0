@@ -32,59 +32,57 @@
 
 
 
-        <input placeholder="Enter Your ZIP Code" name="name" id="zip" />
+        <input placeholder="Enter Your ZIP Code" name="name" class="search" id="zip" />
         <p id="zip_display"></p>
 
         <div class="results" id="app">
-            <div class="search">
-                Search
-            </div>
             <div class="hero">
                 <div class="info">
                     <div class="icon">
+                        <p>{{current.description_icon}}</p>
                         <img class="sun_2" src="icons/sun.png" alt="sun">
                     </div>
                     <div class="date">
                         <div class="day">
-                            Monday
+                            <p>{{time.day}}</p>
                         </div>
                         <div class="date_2">
-                            14th October 2019
+                            <p>{{time.date}}</p>
                         </div>
                     </div>
                     <div class="location">
                         <div class="city">
                             <div class="place">
-                            Manhattan
+                                <p>{{location.name}}</p>
                             </div>
                             <div class="empty"></div>
                             <div class="zip">
-                            66506
+                                <p>{{location.zip}}</p>
                             </div>
                         </div>
                         <div class="latlong">
                             <div class="lat">
-                            Latitude  39.1919
+                                <p>Latitude: {{location.coord.lat}}</p>
                             </div>
-                            <div class="empty"></div>
+                            <div class="empty_2"></div>
                             <div class="long">
-                            Longitude  -96.5800
+                                <p>Longitude: {{location.coord.lon}}</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="temp">
                     <div class="current">
-                        40
+                        <p class="degree_symbol">{{current.temp.current}}</p>
                     </div>
                     <div class="highlow">
                         <div class="empty"></div>
                         <div class="empty_2"></div>
                         <div class="high">
-                            50
+                            <p class="degree_symbol">{{current.temp.high}}</p>
                         </div>
                         <div class="low">
-                            20
+                            <p class="degree_symbol">{{current.temp.low}}</p>
                         </div>
                     </div>
                     <div class="windchill">
@@ -93,7 +91,7 @@
                         </div>
                         <div class="empty"></div>
                         <div class="number">
-                            35
+                            <p class="degree_symbol">{{current.wind.degree}}</p>
                         </div>
                     </div>
                 </div>
@@ -104,22 +102,22 @@
             </div>
             <div class="hourly">
                 <div class="now">
-                    Now
+                    <p>{{hourly[0].startTime}}</p>
                 </div>
                 <div class="10">
-                    10am
+                    <p>{{hourly[1].startTime}}</p>
                 </div>
                 <div class="11">
-                    11am
+                    <p>{{hourly[2].startTime}}</p>
                 </div>
                 <div class="12">
-                    12pm
+                    <p>{{hourly[3].startTime}}</p>
                 </div>
                 <div class="1">
-                    1pm
+                    <p>{{hourly[4].startTime}}</p>
                 </div>
                 <div class="2">
-                    2pm
+                    <p>{{hourly[5].startTime}}</p>
                 </div>
             </div>
             <div class="image">
@@ -144,22 +142,22 @@
             </div>
             <div class="degree">
                 <div class="35">
-                    35
+                    <p class="degree_symbol">{{hourly[0].temperature}}</p>
                 </div>
                 <div class="37">
-                    37
+                    <p class="degree_symbol">{{hourly[1].temperature}}</p>
                 </div>
                 <div class="45">
-                    45
+                    <p class="degree_symbol">{{hourly[2].temperature}}</p>
                 </div>
                 <div class="49">
-                    49
+                    <p class="degree_symbol">{{hourly[3].temperature}}</p>
                 </div>
                 <div class="50">
-                    50
+                    <p class="degree_symbol">{{hourly[4].temperature}}</p>
                 </div>
                 <div class="50">
-                    50
+                    <p class="degree_symbol">{{hourly[5].temperature}}</p>
                 </div>
             </div>
             <div class="weekly">
@@ -171,10 +169,10 @@
                             <img class="symbol" src="icons/sun.png" alt="sun">
                         </div>
                         <div class="large">
-                            61
+                            <p class="degree_symbol">{{forecast[0].max_temp}}</p>
                         </div>
                         <div class="small">
-                            23
+                            <p class="degree_symbol">{{forecast[0].min_temp}}</p>
                         </div>
                     </div>
                     <div class="wednesday">
@@ -183,10 +181,10 @@
                             <img class="symbol_2" src="icons/cloudy.png" alt="cloudy">
                         </div>
                         <div class="large">
-                            64
+                            <p class="degree_symbol">{{forecast[1].max_temp}}</p>
                         </div>
                         <div class="small">
-                            35
+                            <p class="degree_symbol">{{forecast[1].min_temp}}</p>
                         </div>
                     </div>
                     <div class="thursday">
@@ -195,10 +193,10 @@
                             <img class="symbol" src="icons/sun.png" alt="sun">
                         </div>
                         <div class="large">
-                            60
+                            <p class="degree_symbol">{{forecast[2].max_temp}}</p>
                         </div>
                         <div class="small">
-                            41
+                            <p class="degree_symbol">{{forecast[2].min_temp}}</p>
                         </div>
                     </div>
                     <div class="friday">
@@ -207,10 +205,10 @@
                             <img class="symbol" src="icons/sun.png" alt="sun">
                         </div>
                         <div class="large">
-                            73
+                            <p class="degree_symbol">{{forecast[3].max_temp}}</p>
                         </div>
                         <div class="small">
-                            54
+                            <p class="degree_symbol">{{forecast[3].min_temp}}</p>
                         </div>
                     </div>
                     <div class="saturday">
@@ -219,10 +217,10 @@
                             <img class="symbol_2" src="icons/cloudy.png" alt="cloudy">
                         </div>
                         <div class="large">
-                            77
+                            <p class="degree_symbol">{{forecast[4].max_temp}}</p>
                         </div>
                         <div class="small">
-                            50
+                            <p class="degree_symbol">{{forecast[4].min_temp}}</p>
                         </div>
                     </div>
                     <div class="sunday">
@@ -231,10 +229,10 @@
                             <img class="symbol_3" src="/icons/rain.png" alt="rain">
                         </div>
                         <div class="large">
-                            71
+                            <p class="degree_symbol">{{forecast[5].max_temp}}</p>
                         </div>
                         <div class="small">
-                            49
+                            <p class="degree_symbol">{{forecast[5].min_temp}}</p>
                         </div>
                     </div>
                     <div class="monday">
@@ -243,10 +241,10 @@
                             <img class="symbol_3" src="/icons/rain.png" alt="rain">
                         </div>
                         <div class="large">
-                            57
+                            <p class="degree_symbol">{{forecast[6].max_temp}}</p>
                         </div>
                         <div class="small">
-                            43
+                            <p class="degree_symbol">{{forecast[6].min_temp}}</p>
                         </div>
                     </div>
                     <div class="tuesday_2">
@@ -255,20 +253,20 @@
                             <img class="symbol_2" src="icons/cloudy.png" alt="cloudy">
                         </div>
                         <div class="large">
-                            59
+                            <p class="degree_symbol">{{forecast[7].max_temp}}</p>
                         </div>
                         <div class="small">
-                            43
+                            <p class="degree_symbol">{{forecast[7].min_temp}}</p>
                         </div>
                     </div>
                 </div>
                 <div class="description">
-                Today: Clear currently. It's 40; the high today was forecast as 50.
+                    <p>{{current.description_long}}</p>
                     <div class="chance">
-                        Chance of Rain
+                        Precipitation
                         <div class="empty"></div>
                         <div class="amount">
-                            10%
+                            <p>{{forecast[0].precip}}</p>
                         </div>
                     </div>
                     <div class="humidity">
@@ -282,28 +280,28 @@
                         Dew Point
                         <div class="empty"></div>
                         <div class="amount">
-                            32
+                            <p>{{forecast[0].dewpt}}</p>
                         </div>
                     </div>
                     <div class="cloud">
                         Cloud Coverage
                         <div class="empty"></div>
                         <div class="amount">
-                            17%
+                            <p>{{current.cloud_cover}}</p>
                         </div>
                     </div>
                     <div class="uv">
                         UV Index
                         <div class="empty"></div>
                         <div class="amount">
-                            2
+                            <p>{{forecast[0].uv}}</p>
                         </div>
                     </div>
                     <div class="wind">
                         Wind
                         <div class="empty"></div>
                         <div class="amount_2">
-                            SSE 12mph
+                            <p>{{current.wind.speed}}</p>
                         </div>
                     </div>
                     <div class="index">
@@ -324,14 +322,14 @@
                         Visibility
                         <div class="empty"></div>
                         <div class="amount">
-                            15 mi
+                            <p>{{forecast[0].vis}}</p>
                         </div>
                     </div>
                     <div class="pressure">
                         Pressure
                         <div class="empty"></div>
                         <div class="amount">
-                            29.11 inHg
+                            <p>{{forecast[0].pres}} mb</p>
                         </div>
                     </div>
                 </div>
@@ -341,13 +339,13 @@
                     <img class="tv" src="icons/radar.png" alt="radar">
                 </div>
                 <div class="last">
-                    <div class="sunset">
+                    <div class="pic">
                         <img class="sunset" src="icons/sunset.png" alt="sunset">
-                        <div class="rise">
-                            7:34 AM
-                            <div class="set">
-                                    6:48 PM
-                            </div>
+                    </div>
+                    <div class="rise">
+                        <p>{{current.sunrise}}</p>
+                        <div class="set">
+                            <p>{{current.sunset}}</p>
                         </div>
                     </div>
                     <div class="moon">
@@ -365,18 +363,12 @@
             </div>
         </div>
             <!-- <h1>TIME</h1>
-            <p>{{time.day}}</p>
-            <p>{{time.date}}</p>
             <p>{{time.hour_12}} : {{time.minute}} : {{time.seconds}} {{time.ampm}}</p>
             <p>{{time.moom}}</p>
 
             <h1>META</h1>
             <p>{{city}}</p>
 
-            <p>{{location.zip}}</p>
-            <p>{{location.coord.lat}}</p>
-            <p>{{location.coord.lon}}</p>
-            <p>{{location.name}}</p>
 
             <p>{{error}}</p>
 
@@ -385,14 +377,6 @@
             <p>{{current.description_main}}</p>
             <p>{{current.description_long}}</p>
             <p>{{current.description_icon}}</p>
-
-            <p class="degree_symbol">{{current.temp.current}}</p>
-            <p class="degree_symbol">{{current.temp.high}}</p>
-            <p class="degree_symbol">{{current.temp.low}}</p>
-
-            <p>{{current.wind.speed}}</p>
-            <p class="degree_symbol">{{current.wind.degree}}</p>
-            <p>{{current.cloud_cover}}</p>
 
             <p>{{current.rain}}</p>
             <p>{{current.snow}}</p>
@@ -435,11 +419,11 @@
             <p>{{forecast[0].pres}} mb</p>
 
         </div>
-        <div id="map"></div>
+        <div id="map"></div>-->
 
 
 
 
-        <script src="/js/script.js" type="module"></script>
+        <script src="/js/script.js" ></script>
     </body>
 </html>
