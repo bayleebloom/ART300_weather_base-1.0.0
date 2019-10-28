@@ -354,6 +354,7 @@ background-color: rgb(104, 103, 226);
     padding-top: 20px;
     border-bottom: 5px solid rgb(51, 63, 224);
     border-top: 5px solid rgb(55, 18, 162);
+    margin: 0px;
 }
 .large{
     font-weight: 700;
