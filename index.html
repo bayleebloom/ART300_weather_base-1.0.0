@@ -40,7 +40,7 @@
                 <div class="info">
                     <div class="icon">
                         <p>{{current.description_icon}}</p>
-                        <img class="sun_2" src="icons/sun.png" alt="sun">
+                        <div class="icon-01d"></div>
                     </div>
                     <div class="date">
                         <div class="day">
@@ -102,30 +102,30 @@
             </div>
             <div class="hourly">
                 <div class="now">
-                    <p>{{hourly[0].startTime}}</p>
+                    <p>{{hourly[0].time}}</p>
                 </div>
                 <div class="10">
-                    <p>{{hourly[1].startTime}}</p>
+                    <p>{{hourly[1].time}}</p>
                 </div>
                 <div class="11">
-                    <p>{{hourly[2].startTime}}</p>
+                    <p>{{hourly[2].time}}</p>
                 </div>
                 <div class="12">
-                    <p>{{hourly[3].startTime}}</p>
+                    <p>{{hourly[3].time}}</p>
                 </div>
                 <div class="1">
-                    <p>{{hourly[4].startTime}}</p>
+                    <p>{{hourly[4].time}}</p>
                 </div>
                 <div class="2">
-                    <p>{{hourly[5].startTime}}</p>
+                    <p>{{hourly[5].time}}</p>
                 </div>
             </div>
             <div class="image">
                 <div class="35">
-                    <img class="sun" src="icons/sun.png" alt="sun">
+                    <img class="sun" src="icons/01d.png" alt="sun">
                 </div>
                 <div class="37">
-                    <img class="sun" src="icons/sun.png" alt="sun">
+                    <img class="sun" src="icons/01d.png" alt="sun">
                 </div>
                 <div class="45">
                     <img class="cloudy" src="icons/cloudy.png" alt="cloudy">
@@ -247,7 +247,7 @@
                             <p class="degree_symbol">{{forecast[6].min_temp}}</p>
                         </div>
                     </div>
-                    <div class="tuesday_2">
+                    <!-- <div class="tuesday_2">
                         Tuesday
                         <div class="symbol_2">
                             <img class="symbol_2" src="icons/cloudy.png" alt="cloudy">
@@ -258,7 +258,7 @@
                         <div class="small">
                             <p class="degree_symbol">{{forecast[7].min_temp}}</p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="description">
                     <p>{{current.description_long}}</p>
@@ -266,28 +266,28 @@
                         Precipitation
                         <div class="empty"></div>
                         <div class="amount">
-                            <p>{{forecast[0].precip}}</p>
+                            <p>{{forecast[0].precip}}%</p>
                         </div>
                     </div>
                     <div class="humidity">
                         Humidity
                         <div class="empty"></div>
                         <div class="amount">
-                            37%
+                            <p>{{current.humidity}}%</p>
                         </div>
                     </div>
                     <div class="dew">
                         Dew Point
                         <div class="empty"></div>
                         <div class="amount">
-                            <p>{{forecast[0].dewpt}}</p>
+                            <p class="degree_symbol">{{forecast[0].dewpt}}</p>
                         </div>
                     </div>
                     <div class="cloud">
                         Cloud Coverage
                         <div class="empty"></div>
                         <div class="amount">
-                            <p>{{current.cloud_cover}}</p>
+                            <p>{{current.cloud_cover}}%</p>
                         </div>
                     </div>
                     <div class="uv">
@@ -308,21 +308,14 @@
                         Air Quality Index
                         <div class="empty"></div>
                         <div class="amount">
-                            40
-                        </div>
-                    </div>
-                    <div class="quality">
-                        Air Quality
-                        <div class="empty"></div>
-                        <div class="amount">
-                            Good
+                            <p class="air_quality">{{current.air_quality}}</p>
                         </div>
                     </div>
                     <div class="visibility">
                         Visibility
                         <div class="empty"></div>
                         <div class="amount">
-                            <p>{{forecast[0].vis}}</p>
+                            <p>{{forecast[0].vis}}mi</p>
                         </div>
                     </div>
                     <div class="pressure">
@@ -336,7 +329,7 @@
             </div>
             <div class="radar">
                 <div class="tv">
-                    <img class="tv" src="icons/radar.png" alt="radar">
+                    <div id="map"></div>
                 </div>
                 <div class="last">
                     <div class="pic">

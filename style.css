@@ -19,8 +19,8 @@ p{
 }
 
 #map {
-	width: 600px;
-    height: 600px;
+	width: 100%;
+    height: 100%; 
 }
 .search{
     background-color: rgb(104, 103, 226);
@@ -59,6 +59,15 @@ p{
     grid-template-columns: 1fr;
     font-size: 40px;
     grid-template-rows: 1fr;
+}
+.icon-01d{
+    background-image: url("/icons/01d.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    margin-top: 0px;
 }
 .sun_2{
     width: 300px;
@@ -209,7 +218,7 @@ p{
 }
 .weekly{
     width: 97%;
-    height: 960px;
+    height: 880px;
     background-color: rgb(104, 103, 226);
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -499,38 +508,40 @@ p{
     grid-template-columns: 1fr 1fr;
     font-size: 70px;
     grid-template-rows: 1fr;
-    padding-left: 10px;
 }
 .tv{
-    width: 1500px;
-    height: 1000px;
-    margin-left: -80px;
-    margin-top: -50px;
+    width: 1200px;
+    height: 900px;
+    margin-left: 20px;
+    margin-top: 0px;
 }
 .sunset{
-    width: 700px;
-    height: 700px;
-    margin-left: -250px;
-    margin-top: -250px;
-    background-color: yellow;
-    margin-bottom: 90px;
-    z-index: 5;
+    width: 90%;
+    height: 300px;
+    margin-left: 30px;
+    margin-top: 0px;
+    background-color: rgb(104, 103, 226);
 }
 .rise{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: red;
-    z-index: 90;
+    background-color: rgb(104, 103, 226);
+    width: 85%;
+    margin-top: 0px;
+    margin-left: 60px;
+}
+.set{
+    text-align: right;
 }
 .moon{
     height: 400px;
-    width: 140%;
+    width: 95%;
     border-top: 5px solid rgb(55, 18, 162);
-    background-color: green;
-    margin: -200px auto auto -240px;
+    background-color: rgb(104, 103, 226);
+    margin-top: 50px;
+    margin-left: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    z-index: 100;
 }
 .moon_image{
     width: 450px;
