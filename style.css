@@ -67,9 +67,81 @@ p{
     background-size: cover;
     width: 100px;
     height: 100px;
-    margin-top: 0px;
+    margin: -15px 0px 0px auto;
 }
-.sun_2{
+.icon-02d{
+    background-image: url("/icons/02d.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    margin: -20px -5px 0px auto;
+}
+.icon-03d{
+    background-image: url("/icons/03d.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    margin: -20px 0px 0px auto;
+}
+.icon-04d{
+    background-image: url("/icons/04d.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    margin: -40px -20px 0px auto;
+}
+.icon-09d{
+    background-image: url("/icons/09d.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    margin: -40px -20px 0px auto;
+}
+.icon-10d{
+    background-image: url("/icons/10d.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    margin: -40px -20px 0px auto;
+}
+.icon-11d{
+    background-image: url("/icons/11d.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    margin: -40px -20px 0px auto;
+}
+.icon-13d{
+    background-image: url("/icons/13d.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    margin: -20px -10px 0px auto;
+}
+.icon-50d{
+    background-image: url("/icons/50d.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    margin: -20px -10px 0px auto;
+}
+.current{
     width: 300px;
     height: 300px;
     margin: 0px auto 0px auto;
@@ -254,6 +326,7 @@ p{
     padding-top: 15px;
     border-bottom: 5px solid rgb(55, 18, 162);
 }
+
 .humidity{
     width: 93%;
     height: 60px;
@@ -485,7 +558,7 @@ p{
     padding-left: 30px;
     padding-top: 20px;
 }
-.symbol{
+/*.symbol{
     width: 80px;
     height: 80px;
     margin: -5px 10px 0px auto;
@@ -499,7 +572,7 @@ p{
     width: 100px;
     height: 100px;
     margin: -13px 0px 0px auto;
-}
+}*/
 .radar{
     width: 100%;
     height: 700px;
