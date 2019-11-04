@@ -38,9 +38,9 @@
         <div class="results" id="app">
             <div class="hero">
                 <div class="info">
-                    <div class="icon">
+                    <div class="top">
                         <p>{{current.description_icon}}</p>
-                        <div v-bind:class="'icon-'+current.description_icon" class="current"></div>
+                        <div v-bind:class="'icon-'+current.description_icon" class="size"></div>
                     </div>
                     <div class="date">
                         <div class="day">
@@ -96,8 +96,8 @@
                     </div>
                 </div>
                 <div class="alert">
-                        <p>Emergency Alert</p>
-                        <p>Tornado Warning in this area til 6:00 PM EDT. Take shelter now. Check local media.</p>
+                    <p>Alerts</p>
+                    <p>{{error}}</p>
                 </div>
             </div>
             <div class="hourly">
@@ -122,22 +122,22 @@
             </div>
             <div class="image">
                 <div class="35">
-                    <div v-bind:class="'icon-'+current.description_icon"></div>
+                    <div v-bind:class="'icon-'+hourly[0].description_icon"></div>
                 </div>
                 <div class="37">
-                    <img class="sun" src="icons/01d.png" alt="sun">
+                    <div v-bind:class="'icon-'+hourly[1].description_icon"></div>
                 </div>
                 <div class="45">
-                    <img class="cloudy" src="icons/cloudy.png" alt="cloudy">
+                    <div v-bind:class="'icon-'+hourly[2].description_icon"></div>
                 </div>
                 <div class="49">
-                    <img class="cloudy" src="icons/cloudy.png" alt="cloudy">
+                    <div v-bind:class="'icon-'+hourly[3].description_icon"></div>
                 </div>
                 <div class="50">
-                    <img class="cloudy" src="icons/cloudy.png" alt="cloudy">
+                    <div v-bind:class="'icon-'+hourly[4].description_icon"></div>
                 </div>
                 <div class="50">
-                    <img class="cloudy" src="icons/cloudy.png" alt="cloudy">
+                    <div v-bind:class="'icon-'+hourly[5].description_icon"></div>
                 </div>
             </div>
             <div class="degree">
@@ -166,7 +166,7 @@
                     <div class="tuesday">
                         Tuesday
                         <div class="symbol">
-                            <div v-bind:class="'icon-'+forecast[0].description_icon"></div>
+                            <div v-bind:class="'icon-'+forecast[0].description_icon" class="size_2"></div>
                         </div>
                         <div class="large">
                             <p class="degree_symbol">{{forecast[0].max_temp}}</p>
@@ -177,8 +177,8 @@
                     </div>
                     <div class="wednesday">
                         Wednesday
-                        <div class="symbol_2">
-                            <div v-bind:class="'icon-'+forecast[1].description_icon"></div>
+                        <div class="symbol">
+                            <div v-bind:class="'icon-'+forecast[1].description_icon" class="size_2"></div>
                         </div>
                         <div class="large">
                             <p class="degree_symbol">{{forecast[1].max_temp}}</p>
@@ -190,7 +190,7 @@
                     <div class="thursday">
                         Thursday
                         <div class="symbol">
-                            <div v-bind:class="'icon-'+forecast[2].description_icon"></div>
+                            <div v-bind:class="'icon-'+forecast[2].description_icon" class="size_2"></div>
                         </div>
                         <div class="large">
                             <p class="degree_symbol">{{forecast[2].max_temp}}</p>
@@ -202,7 +202,7 @@
                     <div class="friday">
                         Friday
                         <div class="symbol">
-                            <div v-bind:class="'icon-'+forecast[3].description_icon"></div>
+                            <div v-bind:class="'icon-'+forecast[3].description_icon" class="size_2"></div>
                         </div>
                         <div class="large">
                             <p class="degree_symbol">{{forecast[3].max_temp}}</p>
@@ -213,8 +213,8 @@
                     </div>
                     <div class="saturday">
                         Saturday
-                        <div class="symbol_2">
-                            <div v-bind:class="'icon-'+forecast[4].description_icon"></div>
+                        <div class="symbol">
+                            <div v-bind:class="'icon-'+forecast[4].description_icon" class="size_2"></div>
                         </div>
                         <div class="large">
                             <p class="degree_symbol">{{forecast[4].max_temp}}</p>
@@ -225,8 +225,8 @@
                     </div>
                     <div class="sunday">
                         Sunday
-                        <div class="symbol_3">
-                            <div v-bind:class="'icon-'+forecast[5].description_icon"></div>
+                        <div class="symbol">
+                            <div v-bind:class="'icon-'+forecast[5].description_icon" class="size_2"></div>
                         </div>
                         <div class="large">
                             <p class="degree_symbol">{{forecast[5].max_temp}}</p>
@@ -237,8 +237,8 @@
                     </div>
                     <div class="monday">
                         Monday
-                        <div class="symbol_3">
-                            <div v-bind:class="'icon-'+forecast[6].description_icon"></div>
+                        <div class="symbol">
+                            <div v-bind:class="'icon-'+forecast[6].description_icon" class="size_2"></div>
                         </div>
                         <div class="large">
                             <p class="degree_symbol">{{forecast[6].max_temp}}</p>
@@ -346,10 +346,7 @@
                             <img class="moon_image" src="icons/moon.png" alt="moon">
                         </div>
                         <div class="phase">
-                            Waning Gibbous
-                            <div class="illumination">
-                                Illumination: 94%
-                            </div>
+                            <p>{{time.moom}}</p>
                         </div>
                     </div>
                 </div>
